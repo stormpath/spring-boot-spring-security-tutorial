@@ -1,7 +1,7 @@
 {
   "name": "Spring Boot Spring Security",
-  "description": "LockedDown - This tag demonstrates the default behavior where all paths in the application are protected.",
-  "repository": "https://github.com/stormpath/spring-boot-spring-security-tutorial/tree/02-LockedDown",
+  "description": "BasicAccessControl - This tag demonstrates protecting some paths and not others.",
+  "repository": "https://github.com/stormpath/spring-boot-spring-security-tutorial/tree/03-BasicAccessControl",
   "keywords": ["spring boot", "identity", "security", "authentication"],
   "success_url": "/",
   "addons": ["stormpath"]

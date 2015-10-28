@@ -26,20 +26,9 @@
                         <img src="https://stormpath.com/images/template/logo-nav.png"/>
                     </div>
 
-                    <!--/* displayed if account IS NOT null, indicating that the user IS logged in */-->
-                    <div th:if="${account}">
-                        <h1 th:inline="text">Hello, [[${account.fullName}]]!</h1>
-                        <form method="post" th:action="@{/logout}">
-                            <a href="/restricted" class="btn btn-primary">Restricted</a>
-                            <input type="submit" class="btn btn-danger" value="Logout"/>
-                        </form>
-                    </div>
+                    <h1 th:inline="text">[[${account.fullName}]], You are allowed here.</h1>
+                    <a href="/" class="btn btn-primary">Go Home</a>
 
-                    <!--/* displayed if account IS null, indicating that the user IS NOT logged in */-->
-                    <div th:unless="${account}">
-                        <h1>Who are you?</h1>
-                        <a href="/restricted" class="btn btn-primary">Restricted</a>
-                    </div>
                 </div>
             </div>
         </div>
