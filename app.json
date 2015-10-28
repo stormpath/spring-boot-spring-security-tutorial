@@ -1,7 +1,8 @@
 {
   "name": "Spring Boot Spring Security",
-  "description": "BasicSecurity - Default Spring Boot and Spring Security. No Stormpath yet.",
-  "repository": "https://github.com/stormpath/spring-boot-spring-security-tutorial/tree/01-BasicSecurity",
+  "description": "LockedDown - This tag demonstrates the default behavior where all paths in the application are protected.",
+  "repository": "https://github.com/stormpath/spring-boot-spring-security-tutorial/tree/02-LockedDown",
   "keywords": ["spring boot", "identity", "security", "authentication"],
-  "success_url": "/"
+  "success_url": "/",
+  "addons": ["stormpath"]
 }

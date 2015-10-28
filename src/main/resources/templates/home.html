@@ -22,8 +22,12 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="box col-md-6 col-md-offset-3">
-                    <h1 th:inline="text">Hello, [[${#httpServletRequest.remoteUser}]]!</h1>
-                    <form th:action="@{/logout}" method="post">
+                    <div class="stormpath-header">
+                        <img src="https://stormpath.com/images/template/logo-nav.png"/>
+                    </div>
+
+                    <h1 th:inline="text">Hello, [[${account.fullName}]]!</h1>
+                    <form method="post" th:action="@{/logout}">
                         <input type="submit" class="btn btn-danger" value="Logout"/>
                     </form>
                 </div>
