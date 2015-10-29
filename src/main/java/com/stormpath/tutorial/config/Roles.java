@@ -14,32 +14,18 @@
  * limitations under the License.
  */
 
-package com.stormpath.tutorial.controller;
+package com.stormpath.tutorial.config;
 
-import com.stormpath.tutorial.service.AdminService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.core.env.Environment;
+import org.springframework.stereotype.Component;
 
-@Controller
-public class HelloController {
+@Component
+public class Roles {
+    public final String ADMIN;
 
     @Autowired
-    AdminService adminService;
-
-    @RequestMapping("/")
-    String home() {
-        return "home";
-    }
-
-    @RequestMapping("/restricted")
-    String restricted() {
-        return "restricted";
-    }
-
-    @RequestMapping("/admin")
-    String admin() {
-        adminService.ensureAdmin();
-        return "admin";
+    public Roles(Environment env) {
+        ADMIN = env.getProperty("stormpath.authorized.group.admin");
     }
 }

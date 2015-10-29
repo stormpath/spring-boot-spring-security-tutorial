@@ -1,6 +1,6 @@
 # Spring Boot + Spring Security Tutorial
 
-## You are on the `BasicAccessControl` tag
+## You are on the `GroupAccessControl` tag
 
 Use the dropdown above to choose a different tag. Available tags are:
 
