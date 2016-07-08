@@ -1,9 +1,10 @@
 # Spring Boot + Spring Security Tutorial
 
-## You are on the `LockedDown` tag
+## You are on the `BasicSecurity` tag
 
 Use the dropdown above to choose a different tag. Available tags are:
 
+* BasicSecurity - Default Spring Boot and Spring Security. No Stormpath yet.
 * LockedDown - Default Stormpath Spring Security integration. All paths require authentication.
 * BasicAccessControl - Require authentication for certain paths and have other paths publicly available.
 * GroupAccessControl - Further protect the application by requiring membership in a Stormpath Group.
