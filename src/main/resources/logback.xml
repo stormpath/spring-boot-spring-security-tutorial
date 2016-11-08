@@ -19,4 +19,6 @@
     <include resource="org/springframework/boot/logging/logback/base.xml"/>
     <!-- <logger name="org.springframework.web" level="DEBUG"/> -->
     <logger name="com.stormpath" level="INFO"/>
+    <!--<logger name="org.apache.http" level="DEBUG"/>-->
+    <!--<logger name="org.apache.http.wire" level="ERROR"/>-->
 </configuration>
